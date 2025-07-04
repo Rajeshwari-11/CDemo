@@ -1,6 +1,6 @@
  body{
-            padding: 0%;
-            margin: 0%;
+            padding: 0;
+            margin: 0;
             box-sizing: border-box;
         }
         .container{
@@ -70,7 +70,7 @@
             text-align: center;
          }
 
-@media(max-width:992px){
+/* @media(max-width:992px){
     .parent__logo{
         display: none;
     }
@@ -82,6 +82,31 @@
     align-items: center;
     justify-content: center;
     align-items: center;
+    } */
+/* } */
+
+/* table view */
+@media(min-width: 601px)and (max-width:1024px){
+    .container__main{
+        justify-content: space-evenly;
+    }
+    [class^="container__main__"]{
+        width: 45%;
+    }
+}
+
+
+/* mobile view */
+@media(max-width:600px){
+    .parent__logo{
+        display: none;
+    }
+    .container__main{
+        flex-direction: column;
+        align-items: center;
+    }
+    [class^="container__main__"]{
+        width: 90%;
     }
 }
 
